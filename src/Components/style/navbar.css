@@ -1,0 +1,45 @@
+nav a {
+    margin: 0px;
+    text-decoration: none;
+    font-family: Space Mono;
+    color: #000000 !important;
+    text-shadow: 0 0 10px #ffffff,
+        0 0 10px #ffffff;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+
+
+@media screen and (max-width:992px) {
+    .line {
+        display: none;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .navbar-brand {
+        display: none;
+    }
+
+    .navbar-nav {
+        padding-left: 0px !important;
+    }
+}
+
+nav {
+    padding: 10px !important;
+    background: linear-gradient(90deg, #3ec3ef, rgb(224, 73, 73), #3ec3ef);
+}
+
+@media screen and (min-width:321px) {
+    .nav {
+        padding: 5px !important;
+    }
+}
+
+nav a:hover {
+    border-bottom: 3px solid black;
+    font-weight: 1000;
+    transform: scaleX(1.5);
+}

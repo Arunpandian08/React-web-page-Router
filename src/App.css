@@ -1,0 +1,22 @@
+#root {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+body {
+  background: linear-gradient(45deg, orange, #e7e732, #ff1414, pink);
+}
+
+.card-body {
+  background: linear-gradient(50deg, #e9e8e6, #ffffff, #e9e8e6);
+}
+
+.card {
+  box-shadow: 0 0 8px #9c8181, 0 0 10px #9c8181, 0 0 20px #9c8181;
+}
+
+.card:hover {
+  transform: scale(1.005);
+}
