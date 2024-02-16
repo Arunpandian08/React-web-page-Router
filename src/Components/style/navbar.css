@@ -1,15 +1,42 @@
-nav a {
-    margin: 0px;
-    text-decoration: none;
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
     font-family: Space Mono;
-    color: #000000 !important;
-    text-shadow: 0 0 10px #ffffff,
-        0 0 10px #ffffff;
-    padding: 10px;
-    font-size: 1rem;
-}
-
-
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    transition: color 0.3s ease-in-out; /* Transition for color change */
+  }
+  
+  nav ul li a:hover {
+    color: #000000;
+    font-weight: 1000; /* Change color on hover */
+  }
+  
+  nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000000; /* Initial color for the border-bottom */
+    transition: width 0.3s ease-in-out; /* Transition for width change */
+  }
+  
+  nav ul li a:hover::after {
+    width: 100%; /* Expand the border-bottom on hover */
+  }
+  
 
 @media screen and (max-width:992px) {
     .line {
@@ -36,10 +63,4 @@ nav {
     .nav {
         padding: 5px !important;
     }
-}
-
-nav a:hover {
-    border-bottom: 3px solid black;
-    font-weight: 1000;
-    transform: scaleX(1.5);
 }
